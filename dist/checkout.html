@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elegí tu plan Iron House. Checkout de demostración, sin pagos reales.">
+    <title>Tu plan | Iron House</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="plans.js" defer></script>
+    <script src="checkout.js" defer></script>
+</head>
+<body class="checkout-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="checkout-header">
+        <a href="index.html" class="logo" aria-label="Iron House, inicio">IRON<span>HOUSE</span></a>
+        <a href="index.html#inicio" class="home-link" aria-label="Volver al inicio de Iron House" title="Volver al inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/></svg></a>
+    </header>
+    <main id="contenido" class="checkout-main" tabindex="-1">
+        <div class="section-heading">
+            <p class="section-label">TU PRÓXIMO PASO</p>
+            <h1>EMPEZÁ A <span>SUPERARTE.</span></h1>
+            <p>Revisá tu plan y probá el recorrido de inscripción.</p>
+        </div>
+        <p class="demo-banner">Proyecto demo · No se realizan cobros. Usá datos ficticios; no se guardan ni se envían.</p>
+        <noscript><p class="demo-banner">Activá JavaScript para ver el plan y probar el formulario. <a href="index.html#planes">Volver a los planes</a>.</p></noscript>
+        <div id="plan-error" class="checkout-notice" role="status" hidden>
+            <h2>Elegí un plan para continuar</h2>
+            <p>El enlace no contiene un plan válido. Volvé a la sección de planes y elegí el que prefieras.</p>
+            <a class="btn-primary" href="index.html#planes">Ver planes</a>
+        </div>
+        <div id="checkout-content" class="checkout-grid" hidden>
+            <section class="checkout-summary" aria-labelledby="checkout-plan-name">
+                <p class="card-kicker">TU PLAN</p>
+                <h2 id="checkout-plan-name"></h2>
+                <p class="price" id="checkout-price"></p>
+                <p id="checkout-frequency" class="checkout-frequency"></p>
+                <ul id="checkout-benefits" class="benefits"></ul>
+                <a class="back-link" href="index.html#planes">Cambiar de plan ↗</a>
+                <p class="demo-note">Importes ficticios expresados en pesos argentinos.</p>
+            </section>
+            <section class="checkout-form-panel" aria-labelledby="form-title">
+                <h2 id="form-title">Tus datos de prueba</h2>
+                <p class="form-intro" id="form-help">Todos los campos son obligatorios. Completalos con datos ficticios.</p>
+                <form id="checkout-form" aria-describedby="form-help">
+                    <fieldset id="checkout-fields" disabled>
+                        <legend class="visually-hidden">Datos de contacto de demostración</legend>
+                        <div class="form-field">
+                            <label for="customer-name">Nombre</label>
+                            <input id="customer-name" type="text" autocomplete="off" placeholder="Ej.: Alex Demo" required maxlength="100" aria-describedby="name-error">
+                            <p id="name-error" class="field-error"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="customer-email">Email</label>
+                            <input id="customer-email" type="email" autocomplete="off" placeholder="alex@example.com" required maxlength="254" aria-describedby="email-error">
+                            <p id="email-error" class="field-error"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="customer-phone">Teléfono</label>
+                            <input id="customer-phone" type="tel" inputmode="tel" autocomplete="off" placeholder="Ej.: 1100000000" required maxlength="30" aria-describedby="phone-help phone-error">
+                            <p id="phone-help" class="field-hint">De 7 a 15 dígitos. Podés usar +, espacios, guiones y paréntesis.</p>
+                            <p id="phone-error" class="field-error"></p>
+                        </div>
+                        <button class="btn-primary" type="submit">Continuar al pago</button>
+                    </fieldset>
+                    <div id="checkout-feedback" class="checkout-notice success-notice" role="status" tabindex="-1" hidden>
+                        <h3>Demo de portfolio: aquí se integraría la pasarela de pago.</h3>
+                        <p>No se realizó ningún cobro ni se guardaron tus datos.</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="checkout-footer"><small>© 2026 Iron House. Proyecto demo.</small></footer>
+</body>
+</html>
+

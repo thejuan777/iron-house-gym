@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iron House | Gimnasio</title>
+
+    <meta name="description" content="Iron House: entrenamiento, comunidad y planes para cada ritmo. Proyecto demo de gimnasio.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            IRON<span>HOUSE</span>
+        </a>
+
+        <nav class="nav" id="main-nav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#gimnasio">El gimnasio</a>
+            <a href="#planes">Planes</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#entrenadores">Entrenadores</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button type="button" class="menu-button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+    <main id="contenido" tabindex="-1">
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="hero-label">ENTRENÁ. PROGRESÁ. SUPERATE.</p>
+
+                <h1>
+                    SUPERÁ TUS
+                    <span>LÍMITES.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Un espacio diseñado para entrenar, progresar
+                    y alcanzar tu mejor versión.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#planes" class="btn-primary">
+                        Ver planes
+                    </a>
+
+                    <a href="#gimnasio" class="btn-secondary">
+                        Conocer el gimnasio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+<!-- SOBRE EL GIMNASIO -->
+<section class="about" id="gimnasio">
+
+    <div class="about-image">
+    <img src="img/gimnasio-interior.png" alt="Interior de Iron House">
+</div>
+    <div class="about-content">
+
+        <p class="section-label">SOBRE NOSOTROS</p>
+
+        <h2>
+            MÁS QUE UN GIMNASIO.
+            <span>UNA COMUNIDAD.</span>
+        </h2>
+
+        <p>
+            Un espacio pensado para quienes quieren entrenar en serio,
+            superar sus límites y alcanzar sus objetivos.
+        </p>
+
+        <p>
+            Equipamiento moderno, diferentes áreas de entrenamiento
+            y un ambiente preparado para acompañarte en cada etapa.
+        </p>
+
+        <div class="about-stats">
+
+            <div>
+                <strong>500+</strong>
+                <span>Socios</span>
+            </div>
+
+            <div>
+                <strong>20+</strong>
+                <span>Máquinas</span>
+            </div>
+
+            <div>
+                <strong>6</strong>
+                <span>Entrenadores</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <section class="section plans" id="planes" aria-labelledby="plans-title">
+            <div class="section-heading"><p class="section-label">INVERTÍ EN VOS</p><h2 id="plans-title">TU OBJETIVO.<br><span>TU PLAN.</span></h2><p>Elegí cómo querés entrenar. Nosotros te acompañamos.</p></div>
+            <div class="plans-grid">
+                <article class="plan-card" data-plan="dia">
+                    <p class="card-kicker">PROBÁ IRON HOUSE</p>
+                    <h3>Pase diario</h3>
+                    <p class="price">$4.500 <span>ARS / día</span></p>
+                    <p class="plan-description">Ideal para entrenamientos ocasionales o para probar el gimnasio.</p>
+                    <ul class="benefits"><li>Acceso por 1 día</li><li>Musculación y cardio</li><li>Uso de vestuarios y lockers</li><li>Orientación inicial del equipo</li></ul>
+                    <a class="btn-secondary plan-choice" href="checkout.html?plan=dia" aria-label="Elegir Pase diario">Elegir plan</a>
+                </article>
+                <article class="plan-card featured" data-plan="3-veces">
+                    <span class="plan-badge">MÁS ELEGIDO</span>
+                    <p class="card-kicker">ENCONTRÁ TU CONSTANCIA</p>
+                    <h3>Plan 3 veces por semana</h3>
+                    <p class="price">$22.000 <span>ARS / mes</span></p>
+                    <p class="plan-description">Una frecuencia constante para avanzar hacia tus objetivos.</p>
+                    <ul class="benefits"><li>Hasta 3 días por semana</li><li>Musculación, cardio y clases</li><li>Rutina adaptada a tu nivel</li><li>Uso de vestuarios y lockers</li></ul>
+                    <a class="btn-primary plan-choice" href="checkout.html?plan=3-veces" aria-label="Elegir Plan 3 veces por semana">Elegir plan</a>
+                </article>
+                <article class="plan-card" data-plan="libre">
+                    <p class="card-kicker">TU RITMO, SIN LÍMITES</p>
+                    <h3>Plan libre mensual</h3>
+                    <p class="price">$30.000 <span>ARS / mes</span></p>
+                    <p class="plan-description">Entrená a tu ritmo con acceso completo a las instalaciones.</p>
+                    <ul class="benefits"><li>Acceso ilimitado durante el mes</li><li>Acceso completo a las instalaciones</li><li>Todas las actividades incluidas</li><li>Seguimiento mensual de tu rutina</li></ul>
+                    <a class="btn-secondary plan-choice" href="checkout.html?plan=libre" aria-label="Elegir Plan libre mensual">Elegir plan</a>
+                </article>
+            </div><p class="demo-note">Precios y beneficios ficticios para esta web de demostración.</p>
+        </section>
+        <section class="section activities" id="actividades" aria-labelledby="activities-title">
+            <div class="section-heading"><p class="section-label">ENCONTRÁ TU RITMO</p><h2 id="activities-title">DISTINTAS FORMAS.<br><span>LA MISMA ENERGÍA.</span></h2><p>Fuerza, resistencia y movimiento. Hay un lugar para tu entrenamiento.</p></div>
+            <div class="activities-grid">
+                <article class="activity-card"><svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 24h18M9 16v16M15 12v24M33 12v24M39 16v16M6 24h3m30 0h3"/></svg><span class="activity-number">01</span><h3>Musculación</h3><p>Construí fuerza con peso libre, máquinas y rutinas adaptadas a tu nivel.</p></article>
+                <article class="activity-card"><svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="26" cy="9" r="4"/><path d="m12 20 10-5 8 7 9 2M22 15l-3 15-9 10m9-10 12 2 4 9"/></svg><span class="activity-number">02</span><h3>Funcional</h3><p>Mové todo el cuerpo con circuitos que mejoran tu coordinación y movilidad.</p></article>
+                <article class="activity-card"><svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M24 40S5 29 5 17C5 7 18 5 24 14 30 5 43 7 43 17c0 12-19 23-19 23Z"/><path d="M8 25h9l4-8 6 15 4-7h9"/></svg><span class="activity-number">03</span><h3>Cardio</h3><p>Sumá resistencia y energía en cintas, bicicletas y estaciones aeróbicas.</p></article>
+                <article class="activity-card"><svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m27 4-17 23h13l-2 17 17-25H25l2-15Z"/></svg><span class="activity-number">04</span><h3>Cross Training</h3><p>Desafiá tus límites combinando fuerza y resistencia en clases dinámicas.</p></article>
+            </div>
+        </section>
+        <section class="section trainers" id="entrenadores" aria-labelledby="trainers-title">
+            <div class="section-heading"><p class="section-label">NO ENTRENÁS SOLO</p><h2 id="trainers-title">UN EQUIPO.<br><span>TU MEJOR VERSIÓN.</span></h2><p>Conocé a quienes te motivan a dar ese esfuerzo extra.</p></div>
+            <div class="trainers-grid">
+                <article class="trainer-card"><div class="trainer-photo"><img src="img/profe-lucas.png" alt="Lucas Méndez, profesor ficticio de musculación, con planilla de entrenamiento frente a las pesas" loading="lazy" width="1122" height="1402"></div><div class="trainer-info"><span class="card-kicker">FUERZA & TÉCNICA</span><h3>Lucas Méndez</h3><p>Musculación y preparación física.</p></div></article>
+                <article class="trainer-card"><div class="trainer-photo"><img src="img/profe-valentina.png" alt="Valentina Ríos, profesora ficticia de funcional, con una banda de resistencia en el gimnasio" loading="lazy" width="1122" height="1402"></div><div class="trainer-info"><span class="card-kicker">MOVIMIENTO & ENERGÍA</span><h3>Valentina Ríos</h3><p>Entrenamiento funcional y movilidad.</p></div></article>
+                <article class="trainer-card"><div class="trainer-photo"><img src="img/profe-mateo.png" alt="Mateo Costa, profesor ficticio de cross training, con cronómetro junto al sector de entrenamiento" loading="lazy" width="1122" height="1402"></div><div class="trainer-info"><span class="card-kicker">POTENCIA & RESISTENCIA</span><h3>Mateo Costa</h3><p>Cross training y acondicionamiento.</p></div></article>
+            </div><p class="demo-note">Equipo ficticio. Imágenes ilustrativas generadas con IA.</p>
+        </section>
+        <section class="section gallery" id="galeria" aria-labelledby="gallery-title">
+            <div class="section-heading"><p class="section-label">ESTE ES TU LUGAR</p><h2 id="gallery-title">CONOCÉ<br><span>IRON HOUSE.</span></h2><p>Espacios para concentrarte, superarte y disfrutar cada entrenamiento.</p></div>
+            <div class="gallery-grid">
+                <figure><img src="img/gimnasio-interior.png" alt="Vista del interior del gimnasio" loading="lazy"><figcaption>El espacio</figcaption></figure>
+                <figure><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Sala con equipamiento de musculación" loading="lazy"><figcaption>Zona de fuerza</figcaption></figure>
+                <figure><img src="img/zona-cardio-bicis.png" alt="Sala de cardio con filas de bicicletas de spinning, espejos y detalles rojos" loading="lazy" width="1448" height="1086"><figcaption>Zona de cardio</figcaption></figure>
+            </div><p class="demo-note">Imágenes ilustrativas de los espacios y las actividades.</p>
+        </section>
+        <section class="section contact" id="contacto" aria-labelledby="contact-title">
+            <div class="contact-intro"><p class="section-label">EMPEZÁ HOY</p><h2 id="contact-title">EL PRIMER PASO<br><span>LO DAS VOS.</span></h2><p>Acercate, conocé el espacio y encontrá tu próxima meta.</p><div class="contact-actions"><a class="btn-primary social-link" data-whatsapp href="https://wa.me/541100000000?text=Hola%20Iron%20House%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes." target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.3-4.7a8.5 8.5 0 1 1 16.2-4Z"/><path d="M8 7.5c-2 3 3.5 8.5 6.5 7l1.3-1.6-2.6-1.2-.9 1c-1.4-.6-2.4-1.6-3-3l1-.9L9.1 6.5Z" stroke-width="1.2"/></svg>Contactar por WhatsApp</a><a class="btn-secondary social-link" data-instagram href="#" aria-label="Instagram (próximamente)"><svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></div><p id="contact-feedback" class="contact-feedback" role="status"></p></div>
+            <div class="contact-details"><div><p class="card-kicker">DÓNDE ESTAMOS</p><p><a class="address-link" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Libertador%201234%2C%20San%20Juan%2C%20Argentina" target="_blank" rel="noopener noreferrer">Av. Libertador 1234, San Juan, Argentina</a></p></div><div><p class="card-kicker">HORARIOS</p><p>Lunes a viernes · 7:00 a 22:00<br>Sábados · 9:00 a 18:00<br>Domingos · Cerrado</p></div><div><p class="card-kicker">HABLEMOS</p><p>+54 11 0000-0000<br>hola@ironhouse.example</p></div><p class="demo-note">Datos ficticios. WhatsApp usa un número de ejemplo e Instagram estará disponible próximamente.</p></div>
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer-brand"><a class="logo" href="#inicio">IRON<span>HOUSE</span></a><p>Entrená. Progresá. Superate.</p><p><a class="address-link" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Libertador%201234%2C%20San%20Juan%2C%20Argentina" target="_blank" rel="noopener noreferrer">Av. Libertador 1234, San Juan, Argentina</a></p></div>
+    <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="#inicio">Inicio</a><a href="#gimnasio">El gimnasio</a><a href="#planes">Planes</a><a href="#actividades">Actividades</a><a href="#entrenadores">Entrenadores</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
+    </nav>
+    <div class="footer-social"><a class="social-link" data-whatsapp href="https://wa.me/541100000000?text=Hola%20Iron%20House%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes." target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.3-4.7a8.5 8.5 0 1 1 16.2-4Z"/><path d="M8 7.5c-2 3 3.5 8.5 6.5 7l1.3-1.6-2.6-1.2-.9 1c-1.4-.6-2.4-1.6-3-3l1-.9L9.1 6.5Z" stroke-width="1.2"/></svg>WhatsApp</a> <a class="social-link" data-instagram href="#" aria-label="Instagram (próximamente)"><svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></div>
+    <div class="footer-bottom"><small>© 2026 Iron House. Proyecto demo.</small><p id="social-feedback" role="status"></p></div>
+</footer>
+<a class="whatsapp-float" data-whatsapp href="https://wa.me/541100000000?text=Hola%20Iron%20House%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes." target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp (número de ejemplo)" title="WhatsApp · número de ejemplo"><svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.3-4.7a8.5 8.5 0 1 1 16.2-4Z"/><path d="M8 7.5c-2 3 3.5 8.5 6.5 7l1.3-1.6-2.6-1.2-.9 1c-1.4-.6-2.4-1.6-3-3l1-.9L9.1 6.5Z" stroke-width="1.2"/></svg></a>
+
+
+    <script src="plans.js"></script>
+    <script src="scrip.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
